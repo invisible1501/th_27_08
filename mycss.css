@@ -1,0 +1,201 @@
+*{
+    box-sizing: border-box;
+}
+ul, li, .header{
+    margin: 0;
+    padding: 0;
+}
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 55px;
+    background-color: white;
+    box-shadow: 4px 4px 5px rgb(207, 206, 206);
+    z-index: 2;
+}
+.header .left{
+    margin: 5px 0 0 35px;
+    width: fit-content;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 15px;
+    float: left;
+    font-size: 19px;
+}
+.header .left:hover{
+    cursor: pointer;
+    background-color: rgb(206, 205, 205);        
+}
+.header .right{
+    width: fit-content;
+    height: 55px;
+    line-height: 55px;
+    float: right;
+    font-size: 19px;
+}
+.header .right ul{
+    height: 40px;
+    line-height: 40px;
+    margin-top: 5px;
+}
+.header .right ul li{
+    float: left;
+    padding: 0 20px;
+    list-style-type: none;
+}
+.header .right ul li:hover{
+    background-color: rgb(206, 205, 205);
+}
+.header a{
+    color: black;
+    text-decoration: none;
+}
+.main{
+    width: 100%;
+    height: 800px;
+    font-size: 36px;
+    background-image: url(https://www.w3schools.com/w3images/architect.jpg);
+    background-repeat: no-repeat;
+}
+.main .center{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 350px;
+    margin: auto;
+}
+.main .center > div {
+    height: 60px;
+    line-height: 60px;
+    float: left;
+    margin: auto;
+    color: white;
+}
+.main .center .left{
+    margin-right: 15px;
+    width: 80px;
+    text-align: center;
+    background-color: black;
+    opacity: 0.7;
+}
+.mini_header{
+    width: 98%;
+    clear: both;
+    height: 110px;
+    margin: auto;
+    padding-top: 50px;
+    font-size: 29px;
+    border-bottom: thin solid rgb(236, 234, 234);
+}
+.project .content{
+    width: 100%;
+    margin: auto;
+    height: fit-content;
+    padding: 40px 15px;
+}
+.project .content > div{
+    width: 25%;
+    float: left;
+    padding: 3px 6px;
+}
+.project .content img{
+    width: 98%;
+    height: 240px;
+}
+.img > div{
+    position: absolute;
+    width: fit-content;
+    padding: 0 15px;
+    height: 40px;
+    line-height: 40px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 18px;
+}
+.about .about_content{
+    width: 98%;
+    margin: auto;
+}
+.image{
+    width: 25%;
+    float: left;
+    padding-right: 15px;
+}
+.image > div{
+    background-color: #eee;
+    width: 100%;
+    text-align: center;
+    height: 35px;
+    line-height: 35px;
+    font-size: 19px;
+}
+.image > div:hover{
+    cursor: pointer;
+    background-color: rgb(216, 215, 215);
+}
+.about .about_content img{
+    width: 100%;
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%); -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%); -o-filter: grayscale(100%);
+    filter: url(http://visaonho.com/assets/desaturate.svg#greyscale);
+    filter: gray;
+    -webkit-filter: grayscale(1);
+}
+p{
+    font-size: 18px;
+}
+h2, h3{
+    font-weight: normal;
+}
+h3{
+    color: gray;
+}
+.contact_content{
+    width: 98%;
+    margin: auto;
+}
+.contact_content > img{
+    width: 100%;
+    height: 900px;
+    margin: 45px 0 10px 0;
+}
+input{
+    width: 100%;
+    height: 43px;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+button{
+    background-color: black;
+    color: white;
+    text-align: center;
+    width: 150px;
+    height: 43px;
+    margin-top: 15px;
+    font-size: 15px;
+}
+button:hover{
+    cursor: pointer;
+    background-color: rgb(204, 201, 201);
+    color: black;
+}
+.footer{
+    width: 100%;
+    height: 80px;
+    background-color: black;
+    color: white;
+    line-height: 80px;
+    font-size: 19px;
+    text-align: center;
+}
+span > a{
+    text-decoration: none;
+    color: white;
+}
+span > a:hover{
+    color: rgb(7, 214, 7);
+}
