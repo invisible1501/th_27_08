@@ -53,18 +53,20 @@ ul, li, .header{
     text-decoration: none;
 }
 .main{
-    width: 100%;
-    height: 800px;
+    position: relative;
+    width: 99%;
+    margin: auto;
+    height: fit-content;
     font-size: 36px;
-    background-image: url(https://www.w3schools.com/w3images/architect.jpg);
-    background-repeat: no-repeat;
 }
 .main .center{
-    position: relative;
+    position: absolute;
     top: 50%;
+    left: calc(50% - 175px);
+    transform: translateX(-50%);
     transform: translateY(-50%);
     width: 350px;
-    margin: auto;
+    margin: 0 auto;
 }
 .main .center > div {
     height: 60px;
@@ -80,6 +82,11 @@ ul, li, .header{
     background-color: black;
     opacity: 0.7;
 }
+.main > img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
 .mini_header{
     width: 98%;
     clear: both;
@@ -90,7 +97,7 @@ ul, li, .header{
     border-bottom: thin solid rgb(236, 234, 234);
 }
 .project .content{
-    width: 100%;
+    width: 98%;
     margin: auto;
     height: fit-content;
     padding: 40px 15px;
@@ -101,8 +108,8 @@ ul, li, .header{
     padding: 3px 6px;
 }
 .project .content img{
-    width: 98%;
-    height: 240px;
+    object-fit: cover;
+    width: 100%;
 }
 .img > div{
     position: absolute;
@@ -137,6 +144,7 @@ ul, li, .header{
     background-color: rgb(216, 215, 215);
 }
 .about .about_content img{
+    object-fit: cover;
     width: 100%;
     filter: grayscale(100%);
     -webkit-filter: grayscale(100%); -moz-filter: grayscale(100%);
@@ -156,11 +164,13 @@ h3{
 }
 .contact_content{
     width: 98%;
+    height: fit-content;
     margin: auto;
 }
 .contact_content > img{
+    object-fit: cover;
     width: 100%;
-    height: 900px;
+    height: auto;
     margin: 45px 0 10px 0;
 }
 input{
@@ -198,4 +208,75 @@ span > a{
 }
 span > a:hover{
     color: rgb(7, 214, 7);
+}
+@media only screen and (max-width: 1000px){
+    .header .left{
+        margin-left: 15px;
+        padding: 0 10px;
+    }
+    .image{
+        width: 50%;
+        height: auto;
+        object-fit: cover;
+        margin-bottom: 30px;
+    }
+    .project .content > div{
+        width: 50%;
+        height: auto;
+        object-fit: cover;
+    }
+    .mini_header, .project .content, .about .about_content, .contact_content{
+        width: 94%;
+        margin: auto;
+    }
+}
+@media only screen and (max-width: 610px){
+    .header .left{
+        margin-left: 5px;
+        padding: 0 5px;
+    }
+    .main .center{
+        position: absolute;
+        top: 50%;
+        left: calc(50% - 135px);
+        transform: translateX(-50%);
+        transform: translateY(-50%);
+        width: 270px;
+        margin: 0 auto;
+    }
+    .main .center .left{
+        width: 80px;
+        float: none;
+        margin: 0 auto;
+    }
+    .main .center .right{
+        width: 270px;
+        text-align: center;
+        float: none;
+    }
+}
+@media only screen and (max-width: 590px){
+    .header .right, .main .center .right{
+        display: none;
+    }
+    .main .center .left{
+        width: 80px;
+        float: none;
+        margin: 0 auto;
+    }
+    .image{
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        margin-bottom: 30px;
+    }
+    .project .content > div{
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+    .mini_header, .project .content, .about .about_content, .contact_content{
+        width: 94%;
+        margin: auto;
+    }
 }
